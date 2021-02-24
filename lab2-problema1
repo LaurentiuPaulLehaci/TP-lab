@@ -44,11 +44,12 @@ void functie(unsigned int n)
 
 int main()
 {
-    unsigned int v[20], N;
+    unsigned int *v, N;
 
     printf("Introduceti numarul de numere:");
     scanf("%d",&N);
 
+    v=(int*)malloc(N*sizeof(unsigned int));
     for(unsigned int i=0;i<N;i++)
     {
         printf("v[%d]=",i);

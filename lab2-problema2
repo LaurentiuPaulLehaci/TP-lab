@@ -16,8 +16,8 @@ int functie(int n,short c)
 
 int main()
 {
-    int v[20], N;
-    short int C;
+    int *v, N;
+    short C;
 
     do
     {
@@ -28,6 +28,7 @@ int main()
     printf("Introduceti numarul de elemente:");
     scanf("%d",&N);
 
+    v=(int*)malloc(N*sizeof(int));
 
     for(int i=0;i<N;i++)
     {

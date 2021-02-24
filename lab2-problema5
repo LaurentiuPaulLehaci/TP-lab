@@ -8,11 +8,13 @@
 
 int main()
 {
-    int v[20], N;
+    int *v, N;
 
     printf("Introduceti numarul de elemente din vector:");
     scanf("%d",&N);
 
+    v=(int*)malloc(N*sizeof(int));
+    
     for(int i=0;i<N;i++)
     {
         printf("v[%d]=",i);
